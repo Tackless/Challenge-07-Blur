@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+main{
+	position: relative;
+	overflow: scroll;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 999;
+    background-color: #fff;
+}
+
+@media (min-width: 880px) {
+    header {
+        padding: 40px 100px;
+        background-color: transparent;
+    }
+}
+.menu{
+	width: 60px;
+}
+.menu a{
+	display: block;
+}
+.menu span{
+	width: 60px;
+	height: 2px;
+	background-color: #000;
+	display: table;
+	margin: 5px 0;
+}
+.menu:hover span{
+	animation: menu 1s ease 0s;
+}
+.menu:hover span:nth-child(2){
+	animation-delay: .2s;
+}
+.menu:hover span:nth-child(3){
+	animation-delay: .3s;
+}
+@keyframes menu {
+	30%{
+		width: 0;
+	}
+}
+
+.sec_hero{
+	position: relative;
+	max-height: 864px;
+	overflow-x: hidden;
+	display: flex;
+    flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 90px 10px;
+}
+
+@media (min-width: 880px) {
+    .sec_hero {
+        flex-direction: row;
+        overflow: hidden;
+        padding: 90px 100px;
+    }
+}
+
+.left_text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.right_text {
+    margin-top: -170px;
+}
+
+@media (min-width: 880px) {
+    .right_text {
+        margin-top: 0;
+        margin-left: 50px;
+    }
+}
+
+.left_text,
+.right_text{
+	max-width: 85%;
+    z-index: 2;
+}
+
+@media (min-width: 880px) {
+    .left_text,
+    .right_text{
+        max-width: 30%;
+    }
+}
+.hero_img{
+	max-width: 100%;
+	position: relative;
+	margin: 0;
+}
+
+@media (min-width: 880px) {
+    .hero_img{
+        max-width: 40%;
+    }
+}
+.left_text h1,
+.right_text h1{
+	font-size: 50px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+@media (min-width: 880px) {
+    .left_text h1,
+    .right_text h1{
+        font-size: 80px;
+    }
+}
+
+.left_text h1 span{
+	color: #daac62;
+}
+.left_text h6,
+.right_text h6{
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: 'Poppins', sans-serif;
+}
+.hero_img img{
+	width: 100%;
+	position: absolute;
+	top: -8%;
+	transform: rotate(-30deg) scale(1.2);
+}
+.hero_img .item:nth-child(2) img{
+	top: 0;
+	transform: rotate(0deg) scale(1);
+}
+.hero_img .item:nth-child(3) img{
+	top: 0;
+	transform: rotate(-30deg) scale(1.150);
+}
+
+.item{
+	background-color: transparent !important;
+}
+.item_img{
+	width: 330px;
+	height: 500px;
+	border-radius: 100%;
+	overflow: hidden;
+	transform: rotate(30deg);
+	animation: morph 15s linear 0s infinite;
+}
+
+.item_img img {
+    width: auto;
+	height: 500px;
+    
+}
+
+@media (min-width: 880px) {
+    .item_img img {
+        width: 430px;
+        height: 600px;
+        
+    }
+}
+
+@keyframes morph {
+	0%{
+		border-radius: 45% 55% 62% 38%/53% 51% 49% 47%;
+		transform: rotate(15deg);
+	}	
+	20%{
+		border-radius: 45% 55% 49% 51%/36% 51% 49% 64%;
+	}
+	40%{
+		border-radius: 60% 40% 57% 43%/47% 62% 38% 53%;
+	}
+	60%{
+		border-radius: 60% 40% 32% 68%/38% 36% 64% 62%;;
+	}
+}
+
+@media (min-width: 880px) {
+    .item_img{
+        width: 430px;
+        height: 600px;
+    }
+}
+
+.line{
+	width: 330px;
+	height: 500px;
+	border: 2px solid #d8aa5e;
+	display: inline-block;
+	border-radius: 100%;
+	position: absolute;
+	top: -15px;
+	left: 0;
+	animation: morph 12s linear 0s infinite reverse;
+}
+
+@media (min-width: 880px) {
+    .line{
+        width: 430px;
+        height: 600px;
+    }
+}
+
+.shape1{
+	width: 462px;
+	height: 462px;
+	background-color: #dbad63;
+	filter: blur(200px);
+	opacity: .4;
+	position: absolute;
+	top: -120px;
+	left: -120px;
+	z-index: -1;
+	animation: gradient 12s linear 0s infinite;
+}
+@keyframes gradient {
+	30%{
+		background-color: #faa4d2;
+	}
+	60%{
+		background-color: #fd9c8c;
+	}
+	90%{
+		background-color: #2d2d2d;
+		opacity: 1;
+	}
+}
+.shape2{
+	width: 462px;
+	height: 462px;
+	background-color: #faa4d2;
+	filter: blur(100px);
+	opacity: .2;
+	position: absolute;
+	right: -120px;
+	bottom: -120px;
+	z-index: -1;
+	animation: gradient 12s linear 0s infinite;
+}
+.loader{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transform: scale(0);
+	transform-origin: center;
+	background-color: #daac62;
+	z-index: 1000;
+	border-radius: 100%;
+	animation: loader 2s ease 0s;
+}
+@keyframes loader {
+	0%, 50%{
+		transform: scale(2, 3.2);
+	}
+}
