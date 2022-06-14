@@ -11,8 +11,9 @@ body {
 
 main{
 	position: relative;
-	overflow: scroll;
+	overflow: hidden;
 }
+
 header{
 	position: fixed;
 	top: 0;
@@ -62,7 +63,7 @@ header{
 
 .sec_hero{
 	position: relative;
-	max-height: 864px;
+	height: 100vh;
 	overflow-x: hidden;
 	display: flex;
     flex-direction: column;
