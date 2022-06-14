@@ -26,7 +26,7 @@ header{
     background-color: #fff;
 }
 
-@media (min-width: 880px) {
+@media (min-width: 1200px) {
     header {
         padding: 40px 100px;
         background-color: transparent;
@@ -71,7 +71,7 @@ header{
 	padding: 90px 10px;
 }
 
-@media (min-width: 880px) {
+@media (min-width: 1200px) {
     .sec_hero {
         flex-direction: row;
         overflow: hidden;
@@ -84,7 +84,7 @@ header{
     margin-bottom: 20px;
 }
 
-@media (min-width: 880px) {
+@media (min-width: 1200px) {
     .right_text {
         margin-top: 0;
         margin-left: 50px;
@@ -97,7 +97,7 @@ header{
     z-index: 2;
 }
 
-@media (min-width: 880px) {
+@media (min-width: 1200px) {
     .left_text,
     .right_text{
         max-width: 30%;
@@ -109,7 +109,7 @@ header{
 	margin: 0;
 }
 
-@media (min-width: 880px) {
+@media (min-width: 1200px) {
     .hero_img{
         max-width: 40%;
     }
@@ -121,7 +121,7 @@ header{
 	text-transform: uppercase;
 }
 
-@media (min-width: 880px) {
+@media (min-width: 1200px) {
     .left_text h1,
     .right_text h1{
         font-size: 80px;
@@ -170,7 +170,7 @@ header{
     
 }
 
-@media (min-width: 880px) {
+@media (min-width: 1200px) {
     .item_img img {
         width: 430px;
         height: 600px;
@@ -194,7 +194,7 @@ header{
 	}
 }
 
-@media (min-width: 880px) {
+@media (min-width: 1200px) {
     .item_img{
         width: 430px;
         height: 600px;
@@ -213,7 +213,7 @@ header{
 	animation: morph 12s linear 0s infinite reverse;
 }
 
-@media (min-width: 880px) {
+@media (min-width: 1200px) {
     .line{
         width: 430px;
         height: 600px;
