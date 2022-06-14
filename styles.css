@@ -84,10 +84,6 @@ header{
     margin-bottom: 20px;
 }
 
-.right_text {
-    margin-top: -170px;
-}
-
 @media (min-width: 880px) {
     .right_text {
         margin-top: 0;
